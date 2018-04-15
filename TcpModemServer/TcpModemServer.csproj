@@ -107,8 +107,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\OpcUaServer2\Framework.Utilities\Framework.Utilities.csproj">
-      <Project>{0A311E85-ECB6-4907-8681-101FAEBC8F6C}</Project>
+    <ProjectReference Include="..\Framework.Utilities\Framework.Utilities.csproj">
+      <Project>{0a311e85-ecb6-4907-8681-101faebc8f6c}</Project>
       <Name>Framework.Utilities</Name>
     </ProjectReference>
   </ItemGroup>

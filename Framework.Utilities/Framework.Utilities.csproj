@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A311E85-ECB6-4907-8681-101FAEBC8F6C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Framework.Utilities</RootNamespace>
+    <AssemblyName>Framework.Utilities</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>5</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Console\ConsoleInitializer.cs" />
+    <Compile Include="Console\ConsoleMenuHelper.cs" />
+    <Compile Include="Helpers\ConfigHelper.cs" />
+    <Compile Include="Console\ConsoleModeHelper.cs" />
+    <Compile Include="Helpers\DictionaryExtension.cs" />
+    <Compile Include="Helpers\EventBus.cs" />
+    <Compile Include="Helpers\EventSet.cs" />
+    <Compile Include="Helpers\FlagHelper.cs" />
+    <Compile Include="Helpers\HexHelper.cs" />
+    <Compile Include="Helpers\IpAddressHelper.cs" />
+    <Compile Include="Helpers\JsonCreationConverter.cs" />
+    <Compile Include="Helpers\JsonHelper.cs" />
+    <Compile Include="Helpers\ParserHelper.cs" />
+    <Compile Include="Helpers\CriticalSectionHelper.cs" />
+    <Compile Include="Helpers\StringHelper.cs" />
+    <Compile Include="Helpers\TimeExtension.cs" />
+    <Compile Include="IoC\IIocContainer.cs" />
+    <Compile Include="IoC\IMefContainer.cs" />
+    <Compile Include="IoC\MefBehaviorAttribute.cs" />
+    <Compile Include="IoC\MefContainer.cs" />
+    <Compile Include="IoC\MefEndpointBehavior.cs" />
+    <Compile Include="IoC\MefInstanceProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tracing\AppContext.cs" />
+    <Compile Include="Helpers\AtomicFlag.cs" />
+    <Compile Include="Tracing\ColoredConsoleTraceListener.cs" />
+    <Compile Include="Tracing\ILogger.cs" />
+    <Compile Include="Tracing\ITracer.cs" />
+    <Compile Include="Tracing\Log4netTracer.cs" />
+    <Compile Include="Tracing\Log4netLogger.cs" />
+    <Compile Include="Tracing\LogSettings.cs" />
+    <Compile Include="Tracing\Tracer.cs" />
+    <Compile Include="Tracing\TracerType.cs" />
+    <Compile Include="Tracing\TraceUtil.cs" />
+    <Compile Include="Tracing\TracingOutput.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -5,9 +5,9 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpModemServer", "TcpModemServer\TcpModemServer.csproj", "{73562855-EF7C-4831-808E-C20955286640}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Utilities", "..\OpcUaServer2\Framework.Utilities\Framework.Utilities.csproj", "{0A311E85-ECB6-4907-8681-101FAEBC8F6C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpModemServerTest", "TcpModemServerTest\TcpModemServerTest.csproj", "{9A89E112-C6C3-4DB7-B30F-C3306A8D1292}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Framework.Utilities", "Framework.Utilities\Framework.Utilities.csproj", "{0A311E85-ECB6-4907-8681-101FAEBC8F6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{73562855-EF7C-4831-808E-C20955286640}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73562855-EF7C-4831-808E-C20955286640}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73562855-EF7C-4831-808E-C20955286640}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0A311E85-ECB6-4907-8681-101FAEBC8F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0A311E85-ECB6-4907-8681-101FAEBC8F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0A311E85-ECB6-4907-8681-101FAEBC8F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0A311E85-ECB6-4907-8681-101FAEBC8F6C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9A89E112-C6C3-4DB7-B30F-C3306A8D1292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9A89E112-C6C3-4DB7-B30F-C3306A8D1292}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A89E112-C6C3-4DB7-B30F-C3306A8D1292}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A89E112-C6C3-4DB7-B30F-C3306A8D1292}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A311E85-ECB6-4907-8681-101FAEBC8F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A311E85-ECB6-4907-8681-101FAEBC8F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A311E85-ECB6-4907-8681-101FAEBC8F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A311E85-ECB6-4907-8681-101FAEBC8F6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
