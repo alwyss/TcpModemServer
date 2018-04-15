@@ -6,6 +6,8 @@
 *.user
 *.suo
 Thumbs.db
+.vs/
+!/.gitignore
 obj/
 [Bb]in/
 [Dd]ebug*/
