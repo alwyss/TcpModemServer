@@ -1,0 +1,57 @@
+#vim temp files
+*.swp
+
+*.vspscc
+*.vssscc
+*.user
+*.suo
+Thumbs.db
+obj/
+[Bb]in/
+[Dd]ebug*/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+*.pidb
+*.userprefs
+*.resharper
+*.cache
+*.gpState
+test-results
+*.docstates
+*.mdf
+*.ldf
+*.dbmdl
+*.db
+*.opendb
+*.a
+*~
+
+#netmf emulator folder
+DOTNETMF_FS_EMULATION/
+
+
+#codeblocks
+*.layout
+*.depend
+
+
+#
+#visual studio stuff
+# refer to https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
+#
+
+#visual c++ precompiled header file for IntilliSense
+ipch/
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/packages/repositories.config
+# NuGet v3's project.json files produces more ignoreable files
+*.nuget.props
+*.nuget.targets
